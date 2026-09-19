@@ -1,0 +1,31 @@
+// contoh untuk menguji syntax highlighting AcehScript
+ci nan = "Alfiz";
+hitong umu = 20;
+
+peugot_baro sapa(nan) {
+    balek_bakset "Halo, " + nan;
+}
+
+miseu (umu >= 18) {
+    peuleumah(sapa(nan));
+} miseu_han (umu >= 13) {
+    peuleumah("Remaja");
+} han {
+    peuleumah("Kanak-kanak");
+}
+
+keu (ci i = 0; i < 3; i++) {
+    peuleumah(i);
+}
+
+tre {
+    rhoem baro Error("contoh error");
+} drop (e) {
+    error_lagoe(e.message);
+}
+
+local Ureung {
+    constructor(nan) {
+        nyoe.nan = nan;
+    }
+}
