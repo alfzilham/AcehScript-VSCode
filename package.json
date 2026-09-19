@@ -1,0 +1,36 @@
+{
+  "name": "acehscript-vscode",
+  "displayName": "AcehScript",
+  "description": "Syntax highlighting dan icon file untuk bahasa AcehScript (.aceh, .as)",
+  "version": "1.0.0",
+  "publisher": "alfzilham",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": ["Programming Languages", "Themes"],
+  "icon": "icons/acehscript.png",
+  "contributes": {
+    "languages": [
+      {
+        "id": "aceh",
+        "aliases": ["AcehScript", "aceh"],
+        "extensions": [".aceh", ".as"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "aceh",
+        "scopeName": "source.aceh",
+        "path": "./syntaxes/aceh.tmLanguage.json"
+      }
+    ],
+    "iconThemes": [
+      {
+        "id": "acehscript-icons",
+        "label": "AcehScript Icons",
+        "path": "./acehscript-icon-theme.json"
+      }
+    ]
+  }
+}
