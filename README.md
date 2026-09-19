@@ -37,3 +37,9 @@ acehscript-vscode/
 ## Catatan
 
 Icon theme ini **hanya** mendefinisikan ikon untuk `.aceh`/`.as` — file lain akan memakai ikon default VS Code (font-based), karena tema ini tidak melakukan override penuh terhadap seluruh jenis file.
+
+---
+
+## Lisensi
+
+Copyright (c) 2026 Alfiz. Dilisensikan di bawah [MIT License](LICENSE).
