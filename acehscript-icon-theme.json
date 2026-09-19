@@ -1,0 +1,11 @@
+{
+  "iconDefinitions": {
+    "acehscript": {
+      "iconPath": "./icons/acehscript.svg"
+    }
+  },
+  "fileExtensions": {
+    "aceh": "acehscript",
+    "as": "acehscript"
+  }
+}
