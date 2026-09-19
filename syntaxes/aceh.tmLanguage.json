@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "AcehScript",
+  "scopeName": "source.aceh",
+  "patterns": [
+    { "include": "#comments" },
+    { "include": "#strings" },
+    { "include": "#numbers" },
+    { "include": "#keywords-declaration" },
+    { "include": "#keywords-control" },
+    { "include": "#keywords-loop" },
+    { "include": "#keywords-function" },
+    { "include": "#keywords-boolean-null" },
+    { "include": "#keywords-class" },
+    { "include": "#keywords-error" },
+    { "include": "#keywords-module" },
+    { "include": "#keywords-operator" },
+    { "include": "#keywords-builtin" },
+    { "include": "#keywords-other" }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.double-slash.aceh",
+          "match": "//.*$"
+        },
+        {
+          "name": "comment.block.aceh",
+          "begin": "/\\*",
+          "end": "\\*/"
+        }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.double.aceh",
+          "begin": "\"",
+          "end": "\"",
+          "patterns": [{ "name": "constant.character.escape.aceh", "match": "\\\\." }]
+        },
+        {
+          "name": "string.quoted.single.aceh",
+          "begin": "'",
+          "end": "'",
+          "patterns": [{ "name": "constant.character.escape.aceh", "match": "\\\\." }]
+        },
+        {
+          "name": "string.template.aceh",
+          "begin": "`",
+          "end": "`",
+          "patterns": [{ "name": "constant.character.escape.aceh", "match": "\\\\." }]
+        }
+      ]
+    },
+    "numbers": {
+      "name": "constant.numeric.aceh",
+      "match": "\\b[0-9]+(\\.[0-9]+)?\\b"
+    },
+    "keywords-declaration": {
+      "name": "storage.type.aceh",
+      "match": "\\b(mulog|ci|hitong)\\b"
+    },
+    "keywords-control": {
+      "name": "keyword.control.conditional.aceh",
+      "match": "\\b(miseu_han|miseu|han|geulantoe|kasus|biasa|peuhanco)\\b"
+    },
+    "keywords-loop": {
+      "name": "keyword.control.loop.aceh",
+      "match": "\\b(keu|selama|pubuet|lanjut|dalam|daripada)\\b"
+    },
+    "keywords-function": {
+      "name": "keyword.control.aceh",
+      "match": "\\b(peugot_baro|balek_bakset|peusinkron|preh|hase)\\b"
+    },
+    "keywords-boolean-null": {
+      "name": "constant.language.aceh",
+      "match": "\\b(butoi|salah|hana_sapeu_na|hanjeut_takira|ken_numboi)\\b"
+    },
+    "keywords-class": {
+      "name": "storage.type.class.aceh",
+      "match": "\\b(local|meuluah|hayeu|baro|nyoe|statis|cok|ato)\\b"
+    },
+    "keywords-error": {
+      "name": "keyword.control.trycatch.aceh",
+      "match": "\\b(tre|drop|akhejih|rhoem)\\b"
+    },
+    "keywords-module": {
+      "name": "keyword.control.import.aceh",
+      "match": "\\b(peutameng|peutubiet|dari|seubago|lagena)\\b"
+    },
+    "keywords-operator": {
+      "name": "keyword.operator.aceh",
+      "match": "\\b(periksa|contoh_dari|hapoh|soh)\\b"
+    },
+    "keywords-builtin": {
+      "name": "support.function.builtin.aceh",
+      "match": "\\b(peuleumah|error_lagoe)\\b"
+    },
+    "keywords-other": {
+      "name": "keyword.other.aceh",
+      "match": "\\b(ngen|kraleub)\\b"
+    }
+  }
+}
